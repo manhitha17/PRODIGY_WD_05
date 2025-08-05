@@ -1,7 +1,6 @@
-// ✅ Set your API key here
+
 const apiKey = "7e550385098065aba4325f92cfc9f689";
 
-// ✅ Home Page: Get weather using user's location
 if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
   window.onload = () => {
     if (navigator.geolocation) {
@@ -31,7 +30,6 @@ if (window.location.pathname.includes("index.html") || window.location.pathname.
   };
 }
 
-// ✅ Search Page: Get weather by city
 async function getWeatherByCity() {
   const city = document.getElementById("cityInput").value.trim();
   const weatherDiv = document.getElementById("weather");
@@ -58,7 +56,6 @@ async function getWeatherByCity() {
   }
 }
 
-// ✅ Display weather data
 function showWeather(data) {
   const weatherDiv = document.getElementById("weather");
   const icon = data.weather[0].icon;
@@ -76,3 +73,4 @@ function showWeather(data) {
 
   weatherDiv.innerHTML = weatherHTML;
 }
+
