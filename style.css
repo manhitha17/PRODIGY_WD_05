@@ -1,0 +1,434 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px 24px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Banner Image */
+.banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(0, 0, 0, 0.6); /* dark background */
+  padding: 40px;
+  border-radius: 16px;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+}
+
+
+/* Input + Button */
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Card */
+#weather {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  line-height: 1.6;
+}
+
+#weather img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+body.home-bg {
+  background: url('https://images.unsplash.com/photo-1657598339759-fd1432d833f0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWRzJTIwaW4lMjBza3l8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  min-height: 100vh;
+  padding-top: 50px;
+}
+/* Heading styles */
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00e6e6;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #00c2ff;
+  border-bottom: 2px solid #00c2ff;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Tips list styling */
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container ul li {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 6px solid #00ffff;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.container ul li:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+  transform: scale(1.02);
+  border-left-color: #00e6e6;
+}
+
+/* Paragraph styling */
+.container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0f7fa;
+  margin-bottom: 20px;
+}
+
+/* Make it look good on small screens */
+@media (max-width: 600px) {
+  .container {
+    margin: 60px 15px;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container ul li {
+    font-size: 0.95rem;
+  }
+}
+.explore-box {
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.explore-box:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.explore-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.explore-box p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+/* Home Page Background and Overlay */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+.home-page {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Glass card */
+.home-container {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: slideIn 1s ease-out;
+}
+
+/* Text animation */
+.fade-in-text {
+  animation: fadeIn 2s ease-in;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.start-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* NAVBAR */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #00c6ff;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);  /* Darker background */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;  /* Ensure all text is white */
+}
+
+.container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+#weather {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Input */
+#cityInput {
+  width: 70%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#cityInput::placeholder {
+  color: #eee;
+}
+
+#cityInput:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+/* Button */
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  #cityInput {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
