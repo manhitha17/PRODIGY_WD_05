@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -7,7 +7,6 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation */
 nav {
   background: rgba(0, 0, 0, 0.2);
   padding: 12px 24px;
@@ -32,7 +31,6 @@ nav a.active {
   color: #000;
 }
 
-/* Banner Image */
 .banner img {
   width: 100%;
   max-height: 400px;
@@ -40,11 +38,10 @@ nav a.active {
   border-bottom: 4px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Container */
 .container {
   max-width: 600px;
   margin: 100px auto;
-  background: rgba(0, 0, 0, 0.6); /* dark background */
+  background: rgba(0, 0, 0, 0.6); 
   padding: 40px;
   border-radius: 16px;
   color: #ffffff;
@@ -53,8 +50,6 @@ nav a.active {
 
 }
 
-
-/* Input + Button */
 input {
   padding: 12px;
   border-radius: 10px;
@@ -80,7 +75,6 @@ button:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Weather Card */
 #weather {
   margin-top: 30px;
   font-size: 1.1rem;
@@ -96,7 +90,6 @@ button:hover {
   height: 80px;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .container {
     width: 90%;
@@ -116,11 +109,11 @@ body.home-bg {
   color: #fff;
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
   min-height: 100vh;
   padding-top: 50px;
 }
-/* Heading styles */
+
 .container h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -138,7 +131,7 @@ body.home-bg {
   display: inline-block;
 }
 
-/* Tips list styling */
+
 .container ul {
   list-style: none;
   padding: 0;
@@ -162,7 +155,6 @@ body.home-bg {
   border-left-color: #00e6e6;
 }
 
-/* Paragraph styling */
 .container p {
   font-size: 1rem;
   line-height: 1.6;
@@ -170,7 +162,6 @@ body.home-bg {
   margin-bottom: 20px;
 }
 
-/* Make it look good on small screens */
 @media (max-width: 600px) {
   .container {
     margin: 60px 15px;
@@ -215,15 +206,13 @@ body.home-bg {
   font-size: 1.2rem;
   opacity: 0.8;
 }
-/* Home Page Background and Overlay */
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Background */
 .home-page {
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
   background-size: cover;
@@ -235,7 +224,6 @@ body.home-bg {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Dark overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -246,7 +234,6 @@ body.home-bg {
   z-index: 0;
 }
 
-/* Glass card */
 .home-container {
   position: relative;
   z-index: 1;
@@ -259,14 +246,12 @@ body.home-bg {
   animation: slideIn 1s ease-out;
 }
 
-/* Text animation */
 .fade-in-text {
   animation: fadeIn 2s ease-in;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* Button */
 .start-btn {
   margin-top: 1.5rem;
   padding: 0.8rem 2rem;
@@ -284,7 +269,6 @@ body.home-bg {
   box-shadow: 0 0 15px #00c6ff;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -295,7 +279,6 @@ body.home-bg {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -310,7 +293,6 @@ body {
   color: #fff;
 }
 
-/* NAVBAR */
 nav {
   background: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
@@ -347,16 +329,15 @@ nav a.active::after {
   width: 100%;
 }
 
-/* Container */
 .container {
   max-width: 600px;
   margin: 5rem auto;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.6);  /* Darker background */
+  background: rgba(0, 0, 0, 0.6);  
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   text-align: center;
-  color: #fff;  /* Ensure all text is white */
+  color: #fff; 
 }
 
 .container h1 {
@@ -374,7 +355,6 @@ nav a.active::after {
 }
 
 
-/* Input */
 #cityInput {
   width: 70%;
   padding: 0.8rem 1rem;
@@ -397,7 +377,6 @@ nav a.active::after {
   box-shadow: 0 0 10px #00c6ff;
 }
 
-/* Button */
 button {
   padding: 0.6rem 1.5rem;
   font-size: 1rem;
@@ -415,8 +394,6 @@ button:hover {
 }
 
 
-
-/* Responsive */
 @media screen and (max-width: 600px) {
   .container {
     padding: 1.2rem;
@@ -431,4 +408,5 @@ button:hover {
     gap: 1rem;
   }
 }
+
 
